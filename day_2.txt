@@ -1,0 +1,33 @@
+'''
+two_digit=input("Enter two digit number")
+output=int(two_digit[0])+int(two_digit[1])
+print(output)
+
+height=input("Enter your height")
+weight=input("Enter your weight")
+bmi=int(weight)/float(height)*float(height)
+print(int(bmi))
+
+#rounding off logic
+print(8/3) #2.66666666666665
+print(int(8/3))#2
+print(round(8/3))#3
+print(round(8/3,2))#2.67
+print(8//3)#2
+
+current_age=int(input("Please enter your current age"))
+age_left=90-current_age
+num_days=age_left*365
+num_week=age_left*52
+num_month=age_left*12
+print(f'You have {num_days} days,{num_week} weeks,{num_month} months')
+'''
+# tip calculator
+print("Welcome to tip calculator")
+total_bill=float(input("What is the total bill in $ "))
+total_tip_percentage=int(input("Please enter the tip % 10,12 or 15?"))
+total_mem=int(input("How many people to split bill?"))
+bill_divide= total_bill/total_mem
+percent_tip_divide=(total_bill*total_tip_percentage/100)/total_mem
+final_payment_ind=bill_divide+percent_tip_divide
+print(round(final_payment_ind,2))
