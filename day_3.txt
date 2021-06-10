@@ -1,0 +1,142 @@
+
+num=int(input("Enter a number"))
+if num%2==0:
+  print("Its Even number")
+else:
+  print("Its Odd number")
+
+height=input("Enter your height")
+weight=input("Enter your weight")
+bmi=int(weight)/float(height)*float(height)
+if bmi<18.5:
+  print("Underweight")
+elif bmi>18.5 and bmi<25:
+  print("Normal weight")
+elif bmi>25 and bmi<30:
+  print("Overweight")
+elif bmi>30 and bmi<35:
+  print("Obese")
+else:
+  print("clinically obese ")
+print(int(bmi))
+
+year=int(input("Enter the year"))
+if year%4==0:
+  if year%100==0:
+    if year%400==0:
+      print("Leap Year")
+    else:
+      print("Not a leap year")
+  else:
+    print("Not a leap year")
+else:
+  print("Not a leap year")
+
+print("Welcome to Roller Coaster")
+height=int(input("Enter your height"))
+bill=0
+
+if height>120:
+  print("You are eligible for Roller Coaster")
+  age=int(input("Enter your age"))
+  if age<12:
+    bill=5
+    print("Child Tickets are $5")
+  elif age<=18:
+    bill=7
+    print("Youth Tickets are $7")
+  elif age>=45 and 
+  else:
+    bill=12
+    print("Adult tickets are $12")
+  want_photo=input("Enter your choice Y or N")
+
+  if want_photo=='Y':
+    bill=bill+3
+  print(f'Your final bill is {bill}')
+
+else:
+  print("You have to grow taller to ride roller coaster")
+
+
+
+print("Welcome to Pizza Order app")
+size=input("What size of pizz are you looking for?S,M or L :")
+add_peproni=input("Do you want Peproni? Y or N :")
+extra_cheese=input("Want to add extra cheese? Y or N: ")
+price=0
+
+if size=='S':
+  price=15
+  
+  if add_peproni=='Y':
+    price=price+2
+  if extra_cheese=='Y':
+    price=price+1
+  print(f"Please pay {price}$")
+if size=='M':
+  price=20
+  if add_peproni=='Y':
+    price=price+2
+  if extra_cheese=='Y':
+    price=price+1
+  print(f"Please pay {price}$")
+ 
+if size=='L':
+  price=25
+  if add_peproni=='Y':
+    price=price+2
+  if extra_cheese=='Y':
+    price=price+1
+  print(f"Please pay {price}$")
+
+
+name1=input("Enter first name")
+name2=input("Enter Second name")
+name_final=name1+name2
+name_final=name_final.lower()
+print(name_final)
+count=0
+
+  
+t=name_final.count("t")
+r=name_final.count("r")
+u=name_final.count("u")
+e=name_final.count("e")
+true=t+r+u+e
+l=name_final.count("l")
+o=name_final.count("o")
+v=name_final.count("v")
+e=name_final.count("e")
+love=l+o+v+e
+score=str(true)+str(love)
+score=int(score)
+print(score)
+
+if score<10 or score>=90:
+  print(f"Your score is {score} you go together")
+elif score>=40 and score <=50:
+  print(f'your score is {score} you are alright togther')
+else:
+  print(f"your score is {score}")
+
+print("Welcome to the trasure hunt")
+print("Your mission is to find the treasure")
+
+choice1=input("You are at a cross road where you want to go??").lower()
+
+
+
+if choice1=='left':
+  choice2=input("You have reached come to a lake.Please type 'wait' to wait for boat or 'swim' to swim accross").lower()
+  if choice2=='wait':
+    choice3=input("You have arrived at the island there are 3 doors please select the color yellow, red, blue").lower()
+    if choice3=='yellow':
+      print('You found the treasure!!! You won the match')
+    else:
+      print('You chose door which will not open')
+  else:
+    print('You are attacked!! Game Over')
+else:
+  print("Sorry!! You lost ")
+
