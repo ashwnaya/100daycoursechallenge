@@ -1,0 +1,85 @@
+'''askpython.com
+
+import random
+toss=random.randint(0,1)
+print(toss)
+if toss==1:
+  print("Heads")
+else:
+  print("Tails")
+
+import random
+names_string = input("Give me everybody's names, separated by a comma. ")
+names = names_string.split(", ")
+print(names)
+count=len(names)
+index_value=random.randint(0,count-1)
+print(index_value)
+print( f'{names[index_value]} has to pay the bill')
+print(random.choice(names))
+
+row1 = ["⬜️","⬜️","⬜️"]
+row2 = ["⬜️","⬜️","⬜️"]
+row3 = ["⬜️","⬜️","⬜️"]
+map = [row1, row2, row3]
+print(f"{row1}\n{row2}\n{row3}")
+position = input("Where do you want to put the treasure? ")
+string=''
+string=string+position
+map[int(string[0])][int(string[1])]='X'
+print(map)
+print(f"{row1}\n{row2}\n{row3}")
+'''
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+
+import random
+game_image=[rock,paper,scissors]
+your_input=int(input("Enter your choice : "))
+if your_input>=3 or your_input<0:
+  print("You selected invalid number... You lose!")
+else:
+  print(game_image[your_input])
+  computer_choice=random.randint(0,2)
+  print(game_image[computer_choice])
+
+  if your_input==0 and computer_choice==1:
+    print('computer won')
+  elif your_input==0 and computer_choice==2:
+    print('You won')
+  elif your_input==1 and computer_choice==0:
+    print('You won')
+  elif your_input==1 and computer_choice==2:
+    print('Computer won')
+  elif your_input==2 and computer_choice==0:
+    print('Computer won')
+  elif your_input==2 and computer_choice==1:
+    print('You won')
+  elif your_input==computer_choice:
+    print("Draw")
+  else:
+    print("invalid input")
