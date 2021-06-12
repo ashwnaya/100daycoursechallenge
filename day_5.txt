@@ -1,0 +1,78 @@
+'''
+#student_number=int(input("Enter the number of students you want average"))
+student_heights = [180, 124, 165, 173, 189, 169, 146]
+count=0
+average=0
+for i in student_heights:
+  average=average+i
+  count=count+1
+average_height=average/count
+print(round(average_height))
+
+Program to find max
+student_scores = [78, 65, 89, 86, 55, 91, 64, 89]
+max_val=0
+for score in student_scores:
+  if score > max_val:
+    max_val=score
+print("The height score in class is:",max_val)
+
+Sum of even numbers from 1-100
+total_sum=0
+for i in range(1,101):
+  if i%2==0:
+    total_sum=total_sum+i
+print(total_sum)
+
+#or
+total_sum1=0
+for i in range(2,101,2):
+  total_sum1=total_sum1+i
+print(total_sum1)
+
+for i in range(1,101):
+  if i%3==0 and i%5==0:
+    print("FizzBuss")
+  elif i%3==0:
+    print('Fizz')
+  elif i%5==0:
+    print('Buzz')
+  else:
+    print(i)
+'''
+
+import random
+letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
+
+print("Welcome to the PyPassword Generator!")
+nr_letters= int(input("How many letters would you like in your password?\n")) 
+nr_symbols = int(input(f"How many symbols would you like?\n"))
+nr_numbers = int(input(f"How many numbers would you like?\n"))
+
+list1=[]
+string=''
+for letter in range(1,nr_letters+1):
+  rand_letter=random.choice(letters)
+  list1.append(rand_letter)
+
+
+for symbol in range(1,nr_symbols+1):
+  rand_symbol=random.choice(symbols)
+  list1.append(rand_symbol)
+
+
+for number in range(1,nr_numbers+1):
+    rand_num=random.choice(numbers)
+    list1.append(rand_num)
+print(list1)
+
+random.shuffle(list1)
+print(list1)
+for i in list1:
+  string=string+i
+print(string)
+
+
+ 
